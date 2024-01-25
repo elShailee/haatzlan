@@ -1,3 +1,11 @@
+import styles from './styles.module.css';
+
 export default function Home() {
-	return <div id='app-container'>Homepage</div>;
+	const random = Math.random();
+	const coinflip = random > 0.5;
+	return (
+		<div id='app-container' className={coinflip ? styles.appContainer : styles.appContainerBlack}>
+			Homepage
+		</div>
+	);
 }

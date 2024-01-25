@@ -1,0 +1,14 @@
+.appContainer {
+	font-size: 1.5rem;
+}
+
+.appContainer::after {
+	content: '!';
+}
+.appContainerBlack {
+	font-size: 3rem;
+}
+
+.appContainerBlack::after {
+	content: '?';
+}
