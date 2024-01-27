@@ -1,0 +1,8 @@
+.container {
+	width: 100%;
+	display: flex;
+	padding: var(--spacing-l);
+	border: 1px solid var(--highlight-orange-light);
+	justify-content: center;
+	font-size: var(--font-size-xxl);
+}
