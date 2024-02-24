@@ -4,28 +4,30 @@ export type MenuData = {
 	categories: Array<MenuCategory>;
 };
 
-type MenuCategory = DetailsCategory | FooterCategory | CardsCategory;
+export type MenuCategory = DetailsCategory | FooterCategory | CardsCategory;
 
-type DetailsCategory = {
-	type: 'details';
+type BaseCategory = {
 	title: string;
+	pricePrefix?: string;
+};
+
+type DetailsCategory = BaseCategory & {
+	type: 'details';
 	iconId: IconId;
 	items: MenuItem[];
 };
 
-type FooterCategory = {
+type FooterCategory = BaseCategory & {
 	type: 'footer';
-	title: string;
 	items: MenuItem[];
 };
 
-type CardsCategory = {
+type CardsCategory = BaseCategory & {
 	type: 'cards';
-	title: string;
 	items: MenuCard[];
 };
 
-type MenuItem = {
+export type MenuItem = {
 	title: string;
 	variants: MenuItemVariant[];
 };
@@ -35,7 +37,7 @@ type MenuItemVariant = {
 	price: number;
 };
 
-type MenuCard = {
+export type MenuCard = {
 	title: string;
 	description: string;
 	iconId: IconId;

@@ -181,6 +181,7 @@ export const fridayMenuData: MenuData = {
 		{
 			title: 'תוספות למשקה',
 			type: 'footer',
+			pricePrefix: '+',
 			items: [
 				{
 					title: 'שתייה קלה',
