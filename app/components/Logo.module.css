@@ -1,8 +1,14 @@
 .container {
 	width: 100%;
+	height: calc(100vh - 2 * var(--spacing-l));
+	height: calc(100svh - 2 * var(--spacing-l));
+
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
 	padding: var(--spacing-l);
 	border: 1px solid var(--highlight-orange-light);
-	justify-content: center;
 	font-size: var(--font-size-xxl);
 }
