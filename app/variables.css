@@ -1,0 +1,18 @@
+:root {
+	/* colors */
+	--text-primary-dark: #333333;
+	--text-primary-light: #ffffff;
+	--text-primary-orange: #f2994a;
+	--text-secondary-dark: #4f4f4f;
+	--text-secondary-light: #828282;
+
+	--bg-green-dark: #105040;
+
+	--highlight-orange-light: #f2994a;
+
+	/* sizes */
+	--spacing-m: 1rem;
+	--spacing-l: 1.5rem;
+
+	--font-size-xxl: 2.5rem;
+}
