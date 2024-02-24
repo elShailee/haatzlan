@@ -1,17 +1,21 @@
 import React from 'react';
 import { MenuCategory } from '../types';
 import { MenuStyleName } from '../MenuComponent';
+import { getIconElement } from '../utils';
 
 type CategoryProps = {
 	category: MenuCategory;
 	styleName: MenuStyleName;
 };
 
-export default function Category({ category }: CategoryProps) {
+export default function Category({ category, styleName }: CategoryProps) {
 	if (category.type === 'details') {
 		return (
 			<div>
-				<h2>{category.title}</h2>
+				<h2>
+					{getIconElement({ iconId: category.iconId, styleName, size: 'M' })}
+					{category.title}
+				</h2>
 				<ul>
 					{category.items.map((item, index) => (
 						<li key={index}>
